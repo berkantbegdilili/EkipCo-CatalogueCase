@@ -1,0 +1,2875 @@
+{
+	"info": {
+		"_postman_id": "b5dcb80f-f0e6-4c35-a1d2-f7224122ee2f",
+		"name": "ekip.co - Catalogue Case API Collection | by BB",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"temp1\",\n    \"password\": \"temp\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\": \"admin\",\n    \"password\": \"deneme\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self'"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "Expect-CT",
+									"value": "max-age=0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "master-only"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "X-BB-USED-IP-1M",
+									"value": "1"
+								},
+								{
+									"key": "X-BB-RESET-TIME",
+									"value": "Sat Dec 18 2021 21:29:05 GMT+0300 (GMT+03:00)"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "Authorization=eyJhbGciOiJSUzI1NiJ9.eyJfaWQiOiI2MWJlMDJlNzVlMmIwOTkyNDcxY2NhMWYiLCJlbWFpbCI6ImFkbWluIiwicGFzc3dvcmQiOiIkMmIkMTAkWGl4T0NOV2hYbzB5eWtDakNuZTVXLkZEMTV3TnhzU2laaDNxUDNOS2Fnd2xLRG8zM0hTWU8iLCJmYXZvcml0ZVByb2R1Y3RzIjpbXSwiY3JlYXRlZEF0IjoiMjAyMS0xMi0xOFQxNTo0ODo1NS42NzVaIiwidXBkYXRlZEF0IjoiMjAyMS0xMi0xOFQxNTo0ODo1NS42NzVaIn0.g4gvc78CWp39vkWeLfaDwOS6aAS6tGbgV6SNGvcNbIS34cGRVnVb1wg8Ajtz2X8dCdMMAvIoqoiYkJZ7YMlynz2PwsxaRQR4-9wPotah7_dJvnoE3PaZrlkFHsV9_90EUYYxcpIfMRTAnl5zPJcO7ogYkbQ62NRcMqImG9FaQM2oa-Ktp8YB4apvfSvDyGjQlKsJBp9B9bhPJDUC-6viVaHCuDq6bWUH9y80YPzup7IiaiKL9JxHH31T69yFWVJ5hnOuhqKjZEGnWLx6GKE6wyKzGbvi8HUXnjxQM74D_vwaRVcK2YzEkLwcLWTpXg5FVeJFMwLG2MA7TU8VAzTKuHnrpEl2UYyexlhKJFQ24TsCZVHKmOGUFDU1tepZ2hRiUQVMjsJPvkKgTiJyr5XO8AWhcCLOFDiZbGLLHXOp5gCJPj_oIkszWrSHaD4GTdgq9LR0naTgqFYUnk442RkHYXebPkT0do4FAxvJWV8IXSowbwMy7sreweq0IqRZURuwF4WC0z_PfjeL5hoMhFanbP_2qYnH-H11JTforWcqNlnThupPiTxfYPOpKyhU7LJI_h7eZqWvi9qHbeqRNcbjE1Rw0XcOqUjQ2wMWdHs0Eat49r61SObjBiA4VdyOA3LtZkVmE4bVKlZCO6dVHc7JlZY_7v4DV836kfcuZ71PHqE; HttpOnly; Max-Age=3600;"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "__sid=s%3AVgG_FqesdqLsT6OtnRw_GYIe8NZsVw1g.GO017CjgMTKwbjwivRm8hTZ7aYiL75u%2FVn0Vh%2B9u2hU; Path=/; Expires=Sat, 18 Dec 2021 19:28:05 GMT; HttpOnly; SameSite=Lax"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "224"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"e0-xpLdh+d4P7DDNnDyCRLUEZwl8CU\""
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 18 Dec 2021 18:28:05 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"61be02e75e2b0992471cca1f\",\n    \"email\": \"admin\",\n    \"password\": \"$2b$10$XixOCNWhXo0yykCjCne5W.FD15wNxsSiZh3qP3NKagwlKDo33HSYO\",\n    \"favoriteProducts\": [],\n    \"createdAt\": \"2021-12-18T15:48:55.675Z\",\n    \"updatedAt\": \"2021-12-18T15:48:55.675Z\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Logout",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/logout",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"logout"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "401",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/logout",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"logout"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self'"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "Expect-CT",
+									"value": "max-age=0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "master-only"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "X-BB-USED-IP-1M",
+									"value": "5"
+								},
+								{
+									"key": "X-BB-RESET-TIME",
+									"value": "Sat Dec 18 2021 21:17:09 GMT+0300 (GMT+03:00)"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "40"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"28-wHHd4yRlj3aQT0i344AEVfeZdy4\""
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "__sid=s%3AVgG_FqesdqLsT6OtnRw_GYIe8NZsVw1g.GO017CjgMTKwbjwivRm8hTZ7aYiL75u%2FVn0Vh%2B9u2hU; Path=/; Expires=Sat, 18 Dec 2021 19:16:48 GMT; HttpOnly; SameSite=Lax"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 18 Dec 2021 18:16:48 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Wrong authentication token\"\n}"
+						},
+						{
+							"name": "200",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/logout",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"logout"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self'"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "Expect-CT",
+									"value": "max-age=0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "master-only"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "X-BB-USED-IP-1M",
+									"value": "2"
+								},
+								{
+									"key": "X-BB-RESET-TIME",
+									"value": "Sat Dec 18 2021 21:27:38 GMT+0300 (GMT+03:00)"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "Authorization=; Max-age=0"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "__sid=s%3AVgG_FqesdqLsT6OtnRw_GYIe8NZsVw1g.GO017CjgMTKwbjwivRm8hTZ7aYiL75u%2FVn0Vh%2B9u2hU; Path=/; Expires=Sat, 18 Dec 2021 19:26:56 GMT; HttpOnly; SameSite=Lax"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "224"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"e0-xpLdh+d4P7DDNnDyCRLUEZwl8CU\""
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 18 Dec 2021 18:26:56 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"61be02e75e2b0992471cca1f\",\n    \"email\": \"admin\",\n    \"password\": \"$2b$10$XixOCNWhXo0yykCjCne5W.FD15wNxsSiZh3qP3NKagwlKDo33HSYO\",\n    \"favoriteProducts\": [],\n    \"createdAt\": \"2021-12-18T15:48:55.675Z\",\n    \"updatedAt\": \"2021-12-18T15:48:55.675Z\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Sign Up",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"temp1\",\n    \"password\": \"temp\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"signup"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "201",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\": \"temp1\",\n    \"password\": \"temp\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/signup",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"signup"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self'"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "Expect-CT",
+									"value": "max-age=0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "master-only"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "X-BB-USED-IP-1M",
+									"value": "1"
+								},
+								{
+									"key": "X-BB-RESET-TIME",
+									"value": "Sat Dec 18 2021 21:27:38 GMT+0300 (GMT+03:00)"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "224"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"e0-9fDFLZMQyM+MwHK4KiJlSJXM2Rk\""
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "__sid=s%3AVgG_FqesdqLsT6OtnRw_GYIe8NZsVw1g.GO017CjgMTKwbjwivRm8hTZ7aYiL75u%2FVn0Vh%2B9u2hU; Path=/; Expires=Sat, 18 Dec 2021 19:26:38 GMT; HttpOnly; SameSite=Lax"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 18 Dec 2021 18:26:38 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"email\": \"temp1\",\n    \"password\": \"$2b$10$az8Bi.TQWhAiJ4Wdkjsk5ewnrFMGVpJpF9WtBtyBqfZ3yhqaqHzmy\",\n    \"favoriteProducts\": [],\n    \"_id\": \"61be27de5b652ad66a22ab2f\",\n    \"createdAt\": \"2021-12-18T18:26:38.498Z\",\n    \"updatedAt\": \"2021-12-18T18:26:38.498Z\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Create User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"admin\",\n    \"password\": \"deneme\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create User",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\": \"admin\",\n    \"password\": \"deneme\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/users",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"users"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self'"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "Expect-CT",
+									"value": "max-age=0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "master-only"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "224"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"e0-CYtrWXIlMS8jvME4rwItu5uIgSs\""
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 18 Dec 2021 15:48:55 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"email\": \"admin\",\n    \"password\": \"$2b$10$XixOCNWhXo0yykCjCne5W.FD15wNxsSiZh3qP3NKagwlKDo33HSYO\",\n    \"favoriteProducts\": [],\n    \"_id\": \"61be02e75e2b0992471cca1f\",\n    \"createdAt\": \"2021-12-18T15:48:55.675Z\",\n    \"updatedAt\": \"2021-12-18T15:48:55.675Z\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Get Users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Users",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/users",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"users"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self'"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "Expect-CT",
+									"value": "max-age=0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "master-only"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "453"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1c5-eptHkvNazRkqwDdkWPiZvA2Qymo\""
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 18 Dec 2021 15:49:24 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"_id\": \"61be028d5e2b0992471cca1b\",\n        \"email\": \"berkant\",\n        \"password\": \"$2b$10$mjIgIdB4XtVKzmPJEAh2FOB25N.3tOCsQ7rMDFn8Hl8iMdQayg2yy\",\n        \"favoriteProducts\": [],\n        \"createdAt\": \"2021-12-18T15:47:25.818Z\",\n        \"updatedAt\": \"2021-12-18T15:47:25.818Z\"\n    },\n    {\n        \"_id\": \"61be02e75e2b0992471cca1f\",\n        \"email\": \"admin\",\n        \"password\": \"$2b$10$XixOCNWhXo0yykCjCne5W.FD15wNxsSiZh3qP3NKagwlKDo33HSYO\",\n        \"favoriteProducts\": [],\n        \"createdAt\": \"2021-12-18T15:48:55.675Z\",\n        \"updatedAt\": \"2021-12-18T15:48:55.675Z\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Get User",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/users/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								":id"
+							],
+							"query": [
+								{
+									"key": "isPopulate",
+									"value": "true",
+									"description": "[OPTIONAL] ---> Values: [true,false]",
+									"disabled": true
+								}
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "61be028d5e2b0992471cca1b"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 UNPOPULATED",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/users/61be028d5e2b0992471cca1b",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"users",
+										"61be028d5e2b0992471cca1b"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self'"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "Expect-CT",
+									"value": "max-age=0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "master-only"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "X-BB-USED-IP-1M",
+									"value": "2"
+								},
+								{
+									"key": "X-BB-RESET-TIME",
+									"value": "Sat Dec 18 2021 21:30:07 GMT+0300 (GMT+03:00)"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "226"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"e2-YaDZIVcp/B3JrfDxbRjmQqKOjlk\""
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "__sid=s%3AVgG_FqesdqLsT6OtnRw_GYIe8NZsVw1g.GO017CjgMTKwbjwivRm8hTZ7aYiL75u%2FVn0Vh%2B9u2hU; Path=/; Expires=Sat, 18 Dec 2021 19:29:15 GMT; HttpOnly; SameSite=Lax"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 18 Dec 2021 18:29:15 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"61be028d5e2b0992471cca1b\",\n    \"email\": \"berkant\",\n    \"password\": \"$2b$10$mjIgIdB4XtVKzmPJEAh2FOB25N.3tOCsQ7rMDFn8Hl8iMdQayg2yy\",\n    \"favoriteProducts\": [],\n    \"createdAt\": \"2021-12-18T15:47:25.818Z\",\n    \"updatedAt\": \"2021-12-18T15:47:25.818Z\"\n}"
+						},
+						{
+							"name": "200 POPULATED",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/users/:id?isPopulate=true",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"users",
+										":id"
+									],
+									"query": [
+										{
+											"key": "isPopulate",
+											"value": "true",
+											"description": "[OPTIONAL] ---> Values: [true,false]"
+										}
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "61be028d5e2b0992471cca1b"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self'"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "Expect-CT",
+									"value": "max-age=0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "master-only"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "X-BB-USED-IP-1M",
+									"value": "2"
+								},
+								{
+									"key": "X-BB-RESET-TIME",
+									"value": "Sat Dec 18 2021 22:10:25 GMT+0300 (GMT+03:00)"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "419"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1a3-8v5duqTLGcW9gjBQWJ4Qgo0HZgo\""
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "__sid=s%3AVgG_FqesdqLsT6OtnRw_GYIe8NZsVw1g.GO017CjgMTKwbjwivRm8hTZ7aYiL75u%2FVn0Vh%2B9u2hU; Path=/; Expires=Sat, 18 Dec 2021 20:09:37 GMT; HttpOnly; SameSite=Lax"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 18 Dec 2021 19:09:37 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"61be028d5e2b0992471cca1b\",\n    \"email\": \"berkant\",\n    \"password\": \"$2b$10$mjIgIdB4XtVKzmPJEAh2FOB25N.3tOCsQ7rMDFn8Hl8iMdQayg2yy\",\n    \"favoriteProducts\": [\n        {\n            \"_id\": \"61be2b7da47c801cf91c4536\",\n            \"name\": \"BB Spor Ayakkabı\",\n            \"description\": \"Desc Temp\",\n            \"categoryId\": \"61be2a6ba47c801cf91c452e\",\n            \"images\": [\n                \"bbspor1.jpg\",\n                \"bbspor2.jpg\",\n                \"bbspor3.jpg\"\n            ],\n            \"price\": 50.5\n        }\n    ],\n    \"createdAt\": \"2021-12-18T15:47:25.818Z\",\n    \"updatedAt\": \"2021-12-18T18:57:04.249Z\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Category",
+			"item": [
+				{
+					"name": "Get Categories",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/categories",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"categories"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/categories",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"categories"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self'"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "Expect-CT",
+									"value": "max-age=0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "master-only"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "X-BB-USED-IP-1M",
+									"value": "2"
+								},
+								{
+									"key": "X-BB-RESET-TIME",
+									"value": "Sat Dec 18 2021 21:38:31 GMT+0300 (GMT+03:00)"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "95"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"5f-yiKpvyvSgr/bmslnno46hqXcMSQ\""
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "__sid=s%3AVgG_FqesdqLsT6OtnRw_GYIe8NZsVw1g.GO017CjgMTKwbjwivRm8hTZ7aYiL75u%2FVn0Vh%2B9u2hU; Path=/; Expires=Sat, 18 Dec 2021 19:37:50 GMT; HttpOnly; SameSite=Lax"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 18 Dec 2021 18:37:50 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"_id\": \"61be2a6ba47c801cf91c452e\",\n        \"name\": \"Ayakkabı\",\n        \"description\": \"Temp\",\n        \"image\": \"temp.png\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Get Category",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/categories/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"categories",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/categories/61be2a6ba47c801cf91c452e",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"categories",
+										"61be2a6ba47c801cf91c452e"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self'"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "Expect-CT",
+									"value": "max-age=0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "master-only"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "X-BB-USED-IP-1M",
+									"value": "3"
+								},
+								{
+									"key": "X-BB-RESET-TIME",
+									"value": "Sat Dec 18 2021 21:38:31 GMT+0300 (GMT+03:00)"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "93"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"5d-kpkTJmfi4Gn138umhWqlWt147Ss\""
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "__sid=s%3AVgG_FqesdqLsT6OtnRw_GYIe8NZsVw1g.GO017CjgMTKwbjwivRm8hTZ7aYiL75u%2FVn0Vh%2B9u2hU; Path=/; Expires=Sat, 18 Dec 2021 19:38:07 GMT; HttpOnly; SameSite=Lax"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 18 Dec 2021 18:38:07 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"61be2a6ba47c801cf91c452e\",\n    \"name\": \"Ayakkabı\",\n    \"description\": \"Temp\",\n    \"image\": \"temp.png\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Create Category",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Ayakkabı\",\n    \"description\": \"Temp\",\n    \"image\": \"temp.png\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/categories",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"categories"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "201",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Ayakkabı\",\n    \"description\": \"Temp\",\n    \"image\": \"temp.png\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/categories",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"categories"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self'"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "Expect-CT",
+									"value": "max-age=0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "master-only"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "X-BB-USED-IP-1M",
+									"value": "1"
+								},
+								{
+									"key": "X-BB-RESET-TIME",
+									"value": "Sat Dec 18 2021 21:38:31 GMT+0300 (GMT+03:00)"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "93"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"5d-m4ZQhryWHQUgsPRgwsQ+N2KVkns\""
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "__sid=s%3AVgG_FqesdqLsT6OtnRw_GYIe8NZsVw1g.GO017CjgMTKwbjwivRm8hTZ7aYiL75u%2FVn0Vh%2B9u2hU; Path=/; Expires=Sat, 18 Dec 2021 19:37:31 GMT; HttpOnly; SameSite=Lax"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 18 Dec 2021 18:37:31 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"name\": \"Ayakkabı\",\n    \"description\": \"Temp\",\n    \"image\": \"temp.png\",\n    \"_id\": \"61be2a6ba47c801cf91c452e\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Get Products of a Category",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/categories/:id/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"categories",
+								":id",
+								"products"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/categories/61be2a6ba47c801cf91c452e/products",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"categories",
+										"61be2a6ba47c801cf91c452e",
+										"products"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self'"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "Expect-CT",
+									"value": "max-age=0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "master-only"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "X-BB-USED-IP-1M",
+									"value": "4"
+								},
+								{
+									"key": "X-BB-RESET-TIME",
+									"value": "Sat Dec 18 2021 21:57:59 GMT+0300 (GMT+03:00)"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "195"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"c3-9yq58f9ATMqbabCBlV0OGv3h3c0\""
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "__sid=s%3AVgG_FqesdqLsT6OtnRw_GYIe8NZsVw1g.GO017CjgMTKwbjwivRm8hTZ7aYiL75u%2FVn0Vh%2B9u2hU; Path=/; Expires=Sat, 18 Dec 2021 19:57:52 GMT; HttpOnly; SameSite=Lax"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 18 Dec 2021 18:57:52 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"_id\": \"61be2b7da47c801cf91c4536\",\n        \"name\": \"BB Spor Ayakkabı\",\n        \"description\": \"Desc Temp\",\n        \"categoryId\": \"61be2a6ba47c801cf91c452e\",\n        \"images\": [\n            \"bbspor1.jpg\",\n            \"bbspor2.jpg\",\n            \"bbspor3.jpg\"\n        ],\n        \"price\": 50.5\n    }\n]"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "Get Products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"products"
+							],
+							"query": [
+								{
+									"key": "isPopulate",
+									"value": "true",
+									"description": "[OPTIONAL] ---> Values: [true,false]",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 POPULATED",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/products?isPopulate=true",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"products"
+									],
+									"query": [
+										{
+											"key": "isPopulate",
+											"value": "true",
+											"description": "[OPTIONAL] ---> Values: [true,false]"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self'"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "Expect-CT",
+									"value": "max-age=0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "master-only"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "X-BB-USED-IP-1M",
+									"value": "3"
+								},
+								{
+									"key": "X-BB-RESET-TIME",
+									"value": "Sat Dec 18 2021 21:50:29 GMT+0300 (GMT+03:00)"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "302"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"12e-kKHPlBl1ekiV+rblIL0Vi5x9kHU\""
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "__sid=s%3AVgG_FqesdqLsT6OtnRw_GYIe8NZsVw1g.GO017CjgMTKwbjwivRm8hTZ7aYiL75u%2FVn0Vh%2B9u2hU; Path=/; Expires=Sat, 18 Dec 2021 19:50:27 GMT; HttpOnly; SameSite=Lax"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 18 Dec 2021 18:50:27 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"_id\": \"61be2b7da47c801cf91c4536\",\n        \"name\": \"BB Spor Ayakkabı\",\n        \"description\": \"Desc Temp\",\n        \"categoryId\": \"61be2a6ba47c801cf91c452e\",\n        \"images\": [\n            \"bbspor1.jpg\",\n            \"bbspor2.jpg\",\n            \"bbspor3.jpg\"\n        ],\n        \"price\": 50.5,\n        \"category\": [\n            {\n                \"_id\": \"61be2a6ba47c801cf91c452e\",\n                \"name\": \"Ayakkabı\",\n                \"description\": \"Temp\",\n                \"image\": \"temp.png\"\n            }\n        ]\n    }\n]"
+						},
+						{
+							"name": "200 UNPOPULATED",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/products",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"products"
+									],
+									"query": [
+										{
+											"key": "isPopulate",
+											"value": "true",
+											"description": "[OPTIONAL] ---> Values: [true,false]",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self'"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "Expect-CT",
+									"value": "max-age=0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "master-only"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "X-BB-USED-IP-1M",
+									"value": "1"
+								},
+								{
+									"key": "X-BB-RESET-TIME",
+									"value": "Sat Dec 18 2021 21:52:00 GMT+0300 (GMT+03:00)"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "195"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"c3-9yq58f9ATMqbabCBlV0OGv3h3c0\""
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "__sid=s%3AVgG_FqesdqLsT6OtnRw_GYIe8NZsVw1g.GO017CjgMTKwbjwivRm8hTZ7aYiL75u%2FVn0Vh%2B9u2hU; Path=/; Expires=Sat, 18 Dec 2021 19:51:00 GMT; HttpOnly; SameSite=Lax"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 18 Dec 2021 18:51:00 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"_id\": \"61be2b7da47c801cf91c4536\",\n        \"name\": \"BB Spor Ayakkabı\",\n        \"description\": \"Desc Temp\",\n        \"categoryId\": \"61be2a6ba47c801cf91c452e\",\n        \"images\": [\n            \"bbspor1.jpg\",\n            \"bbspor2.jpg\",\n            \"bbspor3.jpg\"\n        ],\n        \"price\": 50.5\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Get Product",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/products/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"products",
+								":id"
+							],
+							"query": [
+								{
+									"key": "isPopulate",
+									"value": "true",
+									"description": "[OPTIONAL] ---> Values: [true,false]",
+									"disabled": true
+								}
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 UNPOPULATED",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/products/61be2b7da47c801cf91c4536",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"products",
+										"61be2b7da47c801cf91c4536"
+									],
+									"query": [
+										{
+											"key": "isPopulate",
+											"value": "true",
+											"description": "[OPTIONAL] ---> Values: [true,false]",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self'"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "Expect-CT",
+									"value": "max-age=0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "master-only"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "X-BB-USED-IP-1M",
+									"value": "3"
+								},
+								{
+									"key": "X-BB-RESET-TIME",
+									"value": "Sat Dec 18 2021 21:53:19 GMT+0300 (GMT+03:00)"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "193"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"c1-UArDkN0S789si5tWFSOQv163WfE\""
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "__sid=s%3AVgG_FqesdqLsT6OtnRw_GYIe8NZsVw1g.GO017CjgMTKwbjwivRm8hTZ7aYiL75u%2FVn0Vh%2B9u2hU; Path=/; Expires=Sat, 18 Dec 2021 19:52:44 GMT; HttpOnly; SameSite=Lax"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 18 Dec 2021 18:52:44 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"61be2b7da47c801cf91c4536\",\n    \"name\": \"BB Spor Ayakkabı\",\n    \"description\": \"Desc Temp\",\n    \"categoryId\": \"61be2a6ba47c801cf91c452e\",\n    \"images\": [\n        \"bbspor1.jpg\",\n        \"bbspor2.jpg\",\n        \"bbspor3.jpg\"\n    ],\n    \"price\": 50.5\n}"
+						},
+						{
+							"name": "200 POPULATED",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/products/61be2b7da47c801cf91c4536?isPopulate=true",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"products",
+										"61be2b7da47c801cf91c4536"
+									],
+									"query": [
+										{
+											"key": "isPopulate",
+											"value": "true",
+											"description": "[OPTIONAL] ---> Values: [true,false]"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self'"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "Expect-CT",
+									"value": "max-age=0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "master-only"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "X-BB-USED-IP-1M",
+									"value": "4"
+								},
+								{
+									"key": "X-BB-RESET-TIME",
+									"value": "Sat Dec 18 2021 21:53:19 GMT+0300 (GMT+03:00)"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "300"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"12c-XbLfg3nPXr1cH89YL0GVdjE8tNM\""
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "__sid=s%3AVgG_FqesdqLsT6OtnRw_GYIe8NZsVw1g.GO017CjgMTKwbjwivRm8hTZ7aYiL75u%2FVn0Vh%2B9u2hU; Path=/; Expires=Sat, 18 Dec 2021 19:53:02 GMT; HttpOnly; SameSite=Lax"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 18 Dec 2021 18:53:02 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"61be2b7da47c801cf91c4536\",\n    \"name\": \"BB Spor Ayakkabı\",\n    \"description\": \"Desc Temp\",\n    \"categoryId\": \"61be2a6ba47c801cf91c452e\",\n    \"images\": [\n        \"bbspor1.jpg\",\n        \"bbspor2.jpg\",\n        \"bbspor3.jpg\"\n    ],\n    \"price\": 50.5,\n    \"category\": [\n        {\n            \"_id\": \"61be2a6ba47c801cf91c452e\",\n            \"name\": \"Ayakkabı\",\n            \"description\": \"Temp\",\n            \"image\": \"temp.png\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Create Product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"BB Spor Ayakkabı\",\n    \"description\": \"Desc Temp\",\n    \"categoryId\": \"61be2a6ba47c801cf91c452e\",\n    \"images\": [\"bbspor1.jpg\",\"bbspor2.jpg\",\"bbspor3.jpg\"],\n    \"price\": 50.5\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "201",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"BB Spor Ayakkabı\",\n    \"description\": \"Desc Temp\",\n    \"categoryId\": \"61be2a6ba47c801cf91c452e\",\n    \"images\": [\"bbspor1.jpg\",\"bbspor2.jpg\",\"bbspor3.jpg\"],\n    \"price\": 50.5\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/products",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"products"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self'"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "Expect-CT",
+									"value": "max-age=0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "master-only"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "X-BB-USED-IP-1M",
+									"value": "3"
+								},
+								{
+									"key": "X-BB-RESET-TIME",
+									"value": "Sat Dec 18 2021 21:42:50 GMT+0300 (GMT+03:00)"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "193"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"c1-mtwbVxadt/vMpQGYDoD03GaZLM8\""
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "__sid=s%3AVgG_FqesdqLsT6OtnRw_GYIe8NZsVw1g.GO017CjgMTKwbjwivRm8hTZ7aYiL75u%2FVn0Vh%2B9u2hU; Path=/; Expires=Sat, 18 Dec 2021 19:42:05 GMT; HttpOnly; SameSite=Lax"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 18 Dec 2021 18:42:05 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"name\": \"BB Spor Ayakkabı\",\n    \"description\": \"Desc Temp\",\n    \"categoryId\": \"61be2a6ba47c801cf91c452e\",\n    \"images\": [\n        \"bbspor1.jpg\",\n        \"bbspor2.jpg\",\n        \"bbspor3.jpg\"\n    ],\n    \"price\": 50.5,\n    \"_id\": \"61be2b7da47c801cf91c4536\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Add Product To Favorites",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userId\": \"61be028d5e2b0992471cca1b\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/products/:id/favorites",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"products",
+								":id",
+								"favorites"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"userId\": \"61be028d5e2b0992471cca1b\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/products/61be2b7da47c801cf91c4536/favorites",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"products",
+										"61be2b7da47c801cf91c4536",
+										"favorites"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self'"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "Expect-CT",
+									"value": "max-age=0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "master-only"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "X-BB-USED-IP-1M",
+									"value": "2"
+								},
+								{
+									"key": "X-BB-RESET-TIME",
+									"value": "Sat Dec 18 2021 21:57:59 GMT+0300 (GMT+03:00)"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "252"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"fc-rCY/BYCWe53FIbSqXf1ItyYfMvg\""
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "__sid=s%3AVgG_FqesdqLsT6OtnRw_GYIe8NZsVw1g.GO017CjgMTKwbjwivRm8hTZ7aYiL75u%2FVn0Vh%2B9u2hU; Path=/; Expires=Sat, 18 Dec 2021 19:57:04 GMT; HttpOnly; SameSite=Lax"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 18 Dec 2021 18:57:04 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"61be028d5e2b0992471cca1b\",\n    \"email\": \"berkant\",\n    \"password\": \"$2b$10$mjIgIdB4XtVKzmPJEAh2FOB25N.3tOCsQ7rMDFn8Hl8iMdQayg2yy\",\n    \"favoriteProducts\": [\n        \"61be2b7da47c801cf91c4536\"\n    ],\n    \"createdAt\": \"2021-12-18T15:47:25.818Z\",\n    \"updatedAt\": \"2021-12-18T18:57:04.249Z\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Slider",
+			"item": [
+				{
+					"name": "Get Sliders",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/sliders",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"sliders"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/sliders",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"sliders"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self'"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "Expect-CT",
+									"value": "max-age=0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "master-only"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "X-BB-USED-IP-1M",
+									"value": "5"
+								},
+								{
+									"key": "X-BB-RESET-TIME",
+									"value": "Sat Dec 18 2021 22:05:23 GMT+0300 (GMT+03:00)"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "186"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"ba-PVR+LixVjEYCIjqdUEeYg18oKzA\""
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "__sid=s%3AVgG_FqesdqLsT6OtnRw_GYIe8NZsVw1g.GO017CjgMTKwbjwivRm8hTZ7aYiL75u%2FVn0Vh%2B9u2hU; Path=/; Expires=Sat, 18 Dec 2021 20:05:09 GMT; HttpOnly; SameSite=Lax"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 18 Dec 2021 19:05:09 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"image\": \"temp.jpg\",\n        \"productId\": \"61be2b7da47c801cf91c4536\",\n        \"priority\": 1,\n        \"expiredAt\": \"2021-12-20T00:00:00.000Z\"\n    },\n    {\n        \"image\": \"temp.jpg\",\n        \"productId\": \"61be2b7da47c801cf91c4536\",\n        \"priority\": 2\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Create Slider",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"productId\": \"61be2b7da47c801cf91c4536\",\n    \"image\": \"temp.jpg\",\n    \"priority\": 1,\n    \"expiredAt\": \"2021-12-20\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/sliders",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"sliders"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 with expiredAt Value",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"productId\": \"61be2b7da47c801cf91c4536\",\n    \"image\": \"temp.jpg\",\n    \"priority\": 1,\n    \"expiredAt\": \"2021-12-20\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/sliders",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"sliders"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self'"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "Expect-CT",
+									"value": "max-age=0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "master-only"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "X-BB-USED-IP-1M",
+									"value": "1"
+								},
+								{
+									"key": "X-BB-RESET-TIME",
+									"value": "Sat Dec 18 2021 22:04:08 GMT+0300 (GMT+03:00)"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "144"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"90-NjKEpTgLuC2df8I8Hy/SNY55ZJU\""
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "__sid=s%3AVgG_FqesdqLsT6OtnRw_GYIe8NZsVw1g.GO017CjgMTKwbjwivRm8hTZ7aYiL75u%2FVn0Vh%2B9u2hU; Path=/; Expires=Sat, 18 Dec 2021 20:03:08 GMT; HttpOnly; SameSite=Lax"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 18 Dec 2021 19:03:08 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"image\": \"temp.jpg\",\n    \"productId\": \"61be2b7da47c801cf91c4536\",\n    \"priority\": 1,\n    \"expiredAt\": \"2021-12-20T00:00:00.000Z\",\n    \"_id\": \"61be306cfb2cddc5e0d09de4\"\n}"
+						},
+						{
+							"name": "200",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"productId\": \"61be2b7da47c801cf91c4536\",\n    \"image\": \"temp.jpg\",\n    \"priority\": 2\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/sliders",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"sliders"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self'"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "Expect-CT",
+									"value": "max-age=0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "master-only"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "X-BB-USED-IP-1M",
+									"value": "2"
+								},
+								{
+									"key": "X-BB-RESET-TIME",
+									"value": "Sat Dec 18 2021 22:05:23 GMT+0300 (GMT+03:00)"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "105"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"69-7bRr1L2gI/7ePK89mcCBYHl9518\""
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "__sid=s%3AVgG_FqesdqLsT6OtnRw_GYIe8NZsVw1g.GO017CjgMTKwbjwivRm8hTZ7aYiL75u%2FVn0Vh%2B9u2hU; Path=/; Expires=Sat, 18 Dec 2021 20:04:34 GMT; HttpOnly; SameSite=Lax"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 18 Dec 2021 19:04:34 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"image\": \"temp.jpg\",\n    \"productId\": \"61be2b7da47c801cf91c4536\",\n    \"priority\": 2,\n    \"_id\": \"61be30c2fb2cddc5e0d09dea\"\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,41 @@
+version: "3.8"
+
+services:
+  catalogue-case:
+    container_name: catalogue-case
+    build: .
+    command: npm run start
+    volumes:
+      - .:/usr/ekipco/catalogue-case/
+      - /usr/ekipco/catalogue-case/node_modules
+    ports:
+      - 3000:3000
+    depends_on:
+      - mongo
+      - redis
+    environment:
+      PORT: 3000
+      DATABASE_URL: mongodb://berkant:ekipco@mongo:27017/CatalogueCase
+      REDIS_HOST: redis
+      REDIS_PORT: 6379
+      REDIS_PASSWORD: ekipco
+      SESSION_SECRET_KEY: ekipco
+  mongo:
+    image: mongo:4.4.6
+    container_name: mongodb
+    restart: always
+    ports:
+      - 27017:27017
+    volumes:
+      - ./mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: ekipco
+  redis:
+    image: redis:6.2.4-alpine
+    container_name: redis
+    command: redis-server --appendonly yes --requirepass ekipco
+    ports:
+      - 6379:6379
+    environment:
+      - REDIS_REPLICATION_MODE=master
